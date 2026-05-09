@@ -80,20 +80,20 @@ v2.1 (V2.5에서 변경 없음)
 
 ```text
 /prompts
-  lock.md                                   ← lock_v1_2_1.md 복사
-  promptpack_toc.md                         ← promptpack_toc_v2_5.md 복사
-  orchestrator.md                           ← orchestrator_v2_5.md 복사
-  prompt_1_user_input_organizer.md          ← v2.5 복사
-  prompt_2_trend_research.md                ← v2.1 복사
-  prompt_3_trend_decision_user_choice.md    ← v2.1 복사
-  prompt_4_commercial_concept.md            ← v2.1 복사
-  prompt_5_world_design.md                  ← v2.1 복사
-  prompt_6_character_design.md              ← v2.1 복사
-  prompt_7_full_arc_structure.md            ← v2.1 복사
-  prompt_8_opening_1to5_design.md           ← v2.5 복사
-  prompt_9_manuscript_writing.md            ← v2.5 복사
-  prompt_10_diagnosis.md                    ← v2.5 복사
-  prompt_11_handoff.md                      ← v2.5 복사
+  lock.md                                   ← LOCK v1.2.1
+  promptpack_toc.md                         ← 목차 v2.5
+  orchestrator.md                           ← 총괄 실행 프롬프트 v2.5
+  prompt_1_user_input_organizer.md          ← v2.5
+  prompt_2_trend_research.md                ← v2.1
+  prompt_3_trend_decision_user_choice.md    ← v2.1
+  prompt_4_commercial_concept.md            ← v2.1
+  prompt_5_world_design.md                  ← v2.1
+  prompt_6_character_design.md              ← v2.1
+  prompt_7_full_arc_structure.md            ← v2.1
+  prompt_8_opening_1to5_design.md           ← v2.5
+  prompt_9_manuscript_writing.md            ← v2.5
+  prompt_10_diagnosis.md                    ← v2.5
+  prompt_11_handoff.md                      ← v2.5
 
 /source
   raw_memo.md                               ← 사용자 자유 메모 (선택)
@@ -125,7 +125,7 @@ v2.1 (V2.5에서 변경 없음)
 
 ### 1. 깃허브 repo 준비
 
-위 폴더 구조대로 repo 만들고 14파일을 `/prompts`에 배치. 각 파일명은 v2.5/v2.1 표기 없이 단순 이름으로 통일.
+이 저장소는 위 폴더 구조대로 14파일을 `/prompts`에 배치한다. 각 파일명은 v2.5/v2.1 표기 없이 단순 이름으로 통일한다.
 
 ### 2. 사용자 자료 준비 (선택)
 
@@ -137,7 +137,7 @@ v2.1 (V2.5에서 변경 없음)
 
 ### 3. orchestrator 실행
 
-Codex/Claude Code/Cursor 등 단일 모델 환경에서 `orchestrator.md`를 컨텍스트에 부착하고 시작 신호.
+Codex/Claude Code/Cursor 등 단일 모델 환경에서 `/prompts/orchestrator.md`를 컨텍스트에 부착하고 시작 신호.
 
 orchestrator는:
 - LOCK v1.2.1 + 모듈 14파일 부착 상태 검증
