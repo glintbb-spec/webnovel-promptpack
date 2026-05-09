@@ -111,6 +111,16 @@ v2.1 (V2.5에서 변경 없음)
   handoff/                                  ← 11번 인계 패키지
   logs/                                     ← 모듈 실행 로그
   state/                                    ← 상태 파일 10종
+    current_state.md                        ← 현재 단계·회차·다음 작업
+    decisions_log.md                        ← 확정 결정 기록
+    open_questions.md                       ← 미해결 질문 목록
+    continuity_ledger.md                    ← 설정·사건 연속성 장부
+    foreshadowing_ledger.md                 ← 복선 심기·회수 장부
+    character_pressure_ledger.md            ← 인물별 압박·선택 변화
+    retry_counter.md                        ← 재작성·재시도 횟수
+    signature_log.md                        ← 지향 시그니처 반영 기록
+    anti_pattern_log.md                     ← 회피 패턴 발생·방지 기록
+    comparison_reference_index.md           ← 지향/회피 참고 자료 색인
 
 /archive (V2.5 정리 시 신설)
   v1_x_legacy/                              ← v1.x 폐기 파일
