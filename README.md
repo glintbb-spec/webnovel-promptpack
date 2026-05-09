@@ -80,20 +80,20 @@ v2.1 (V2.5에서 변경 없음)
 
 ```text
 /prompts
-  lock.md                                   ← lock_v1_2_1.md 복사
-  promptpack_toc.md                         ← promptpack_toc_v2_5.md 복사
-  orchestrator.md                           ← orchestrator_v2_5.md 복사
-  prompt_1_user_input_organizer.md          ← v2.5 복사
-  prompt_2_trend_research.md                ← v2.1 복사
-  prompt_3_trend_decision_user_choice.md    ← v2.1 복사
-  prompt_4_commercial_concept.md            ← v2.1 복사
-  prompt_5_world_design.md                  ← v2.1 복사
-  prompt_6_character_design.md              ← v2.1 복사
-  prompt_7_full_arc_structure.md            ← v2.1 복사
-  prompt_8_opening_1to5_design.md           ← v2.5 복사
-  prompt_9_manuscript_writing.md            ← v2.5 복사
-  prompt_10_diagnosis.md                    ← v2.5 복사
-  prompt_11_handoff.md                      ← v2.5 복사
+  lock.md                                   ← LOCK v1.2.1
+  promptpack_toc.md                         ← 목차 v2.5
+  orchestrator.md                           ← 총괄 실행 프롬프트 v2.5
+  prompt_1_user_input_organizer.md          ← v2.5
+  prompt_2_trend_research.md                ← v2.1
+  prompt_3_trend_decision_user_choice.md    ← v2.1
+  prompt_4_commercial_concept.md            ← v2.1
+  prompt_5_world_design.md                  ← v2.1
+  prompt_6_character_design.md              ← v2.1
+  prompt_7_full_arc_structure.md            ← v2.1
+  prompt_8_opening_1to5_design.md           ← v2.5
+  prompt_9_manuscript_writing.md            ← v2.5
+  prompt_10_diagnosis.md                    ← v2.5
+  prompt_11_handoff.md                      ← v2.5
 
 /source
   raw_memo.md                               ← 사용자 자유 메모 (선택)
@@ -125,19 +125,19 @@ v2.1 (V2.5에서 변경 없음)
 
 ### 1. 깃허브 repo 준비
 
-위 폴더 구조대로 repo 만들고 14파일을 `/prompts`에 배치. 각 파일명은 v2.5/v2.1 표기 없이 단순 이름으로 통일.
+이 저장소는 위 폴더 구조대로 14파일을 `/prompts`에 배치한다. 각 파일명은 v2.5/v2.1 표기 없이 단순 이름으로 통일한다.
 
 ### 2. 사용자 자료 준비 (선택)
 
-- **raw_memo.md** — 자유 형식 메모 (없어도 됨)
-- **/reference/like/*.md** — 좋아하는 작품/회차 원문 5~10화 분량 (없어도 됨, 있으면 9번 본문 정밀도 강화)
-- **/reference/dislike/*.md** — 싫어하는 양산형 작품/회차 원문 1~3편 (없어도 됨)
+- **/source/raw_memo.md** — 작품 기본 방향·주인공·세계관·상업적 방향·문체를 빈칸 채우기식으로 적는 시작 메모
+- **/reference/like/sample_like.md** — 지향 샘플 1편을 정리하는 양식. 좋아하는 문체·대사·감정선·후킹 방식을 적는다.
+- **/reference/dislike/sample_dislike.md** — 회피 샘플 1편을 정리하는 양식. 싫은 문체·전개·캐릭터 처리와 금지 규칙을 적는다.
 
-원문 자료 없으면 1번이 사용자에게 signature 메타·비교 기준 메타 8항목씩 직접 묻는다 (V2.5: 형용사 답변 시 정량/행동 규칙 환원 강제).
+실제 운영 시 `sample_like.md`와 `sample_dislike.md`는 복사해서 작품별 파일로 늘려도 된다. 원문 자료 없으면 1번이 사용자에게 signature 메타·비교 기준 메타 8항목씩 직접 묻는다 (V2.5: 형용사 답변 시 정량/행동 규칙 환원 강제).
 
 ### 3. orchestrator 실행
 
-Codex/Claude Code/Cursor 등 단일 모델 환경에서 `orchestrator.md`를 컨텍스트에 부착하고 시작 신호.
+Codex/Claude Code/Cursor 등 단일 모델 환경에서 `/prompts/orchestrator.md`를 컨텍스트에 부착하고 시작 신호.
 
 orchestrator는:
 - LOCK v1.2.1 + 모듈 14파일 부착 상태 검증
