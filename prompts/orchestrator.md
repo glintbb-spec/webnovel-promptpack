@@ -116,8 +116,8 @@ LOCK §1·§3-E·§9·§12 매핑 표 (V2.5 신설 — 빈 구멍 C 메움):
   prompt_7_full_arc_structure.md
   prompt_8_opening_1to5_design.md
   prompt_9_manuscript_writing.md
-  prompt_10_5episode_diagnosis_correction.md
-  prompt_11_longform_state_handoff.md
+  prompt_10_diagnosis.md
+  prompt_11_handoff.md
   orchestrator.md
 
 /source
