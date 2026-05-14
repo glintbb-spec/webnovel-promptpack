@@ -1,11 +1,8 @@
 # prompt_Bprime_9lite_draft.md
-
 > 상태: 실행용 최종 프롬프트가 아닌 초안.
 > 실제 1화 원고 작성 금지.
-> like 샘플 필요 상태: MISSING_LIKE_SAMPLE
-
+> like 샘플 상태: READY
 ## LOCK 요약
-
 - 이번 출력 대상은 1화 원고가 아니라 1화 9-lite B' 실행 프롬프트 준비 초안이다.
 - 정본 원본은 수정하지 않는다.
 - 1화는 오배송 탄생 사건을 다루되, 윤리 구조의 자세한 해설은 후속 화로 남긴다.
@@ -14,9 +11,7 @@
 - 염라와 저승 실무 상부를 혼동하지 않는다.
 - 삼신은 해결사처럼 쓰지 않는다.
 - 실제 원고 A/B'는 like 샘플 제공 후 다음 작업에서만 작성한다.
-
 ## docs 요약 카드
-
 - 작품 훅: 저승 차사가 인간으로 오배송됐고, 사기 무속 시장으로 망가진 귀계 질서를 떠맡는다.
 - 톤: 가벼움, 실소, 무거움, 음모를 교대한다.
 - 한도윤: 저승 차사급 영혼이 신생아 육신에 들어온 존재. 까탈스럽고 귀찮아하지만 가해자는 아니다.
@@ -24,30 +19,24 @@
 - 오배송 구조: `b` 육신에 한도윤이 들어오고, `a`가 잘못 회수되며, `b` 신생혼 보정은 후속으로 미룬다.
 - 취약점: `수명 3일 / 사망 처리 누락`은 이후 영구 취약점의 표지다.
 - 1화 운용: 짧은 컷, 1인칭 내면, 신생아 육신과 차사 자의식의 대비, 설명보다 표기와 행동.
-
 ## §B-lite 4항목 자리
-
 1. [B-lite 항목 1 자리]
 2. [B-lite 항목 2 자리]
 3. [B-lite 항목 3 자리]
 4. [B-lite 항목 4 자리]
-
 ## like 샘플 자리
-
-MISSING_LIKE_SAMPLE
-
+LIKE_SAMPLE_STATUS:
+- READY
+- sample file: projects/project_001/experiments/ep001_9lite/like_sample_user_ep001.md
+- use only for rhythm, scene entry, dialogue/narration balance, and protagonist tone
+- do not copy sentences or reproduce the sample scene verbatim
 ## scene drama card 삽입 자리
-
 `scene_drama_card_draft.md`의 Scene 1~5를 삽입한다.
-
 ## 출력 규칙
-
 - 본문만 출력.
 - 자체점검 출력 없음.
 - 카드 설명 출력 없음.
 - 메타 해설 출력 없음.
 - 원고 외 부가 설명 출력 없음.
-
 ## 중단 조건
-
 like 샘플이 `MISSING_LIKE_SAMPLE`이면 실행하지 않는다.
